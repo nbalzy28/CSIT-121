@@ -1,0 +1,180 @@
+.container,
+.content,
+.sidebar {
+  width: 100%;
+}
+
+h1 {
+  color: #1e5c9d;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://i.pinimg.com/736x/c4/92/ba/c492baf54af3024902ae3cc570f2aaf3.jpg');
+  background-repeat: repeat;
+}
+.box h1 {
+  margin: 0;
+  line-height: 75px;
+  font-size: 48px;
+  color: #1e5c9d;
+  text-align: center;
+}
+
+.box {
+  position: absolute;
+  top: 30px;
+  text-align: center;
+  margin: auto;
+  width: 35%;
+  height: 65px;
+  border: 3px solid #666;
+  padding: 10px;
+  background-color: #e2eaf1;
+}
+
+.center {
+  text-align: center;
+}
+
+.sidebar {
+  position: absolute;
+  top: 148px;
+  left: 30px;
+  width: 30%;
+  width: 200px;
+  height: 230px;
+  background-color: #e2eaf1;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 5px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  color: #666;
+}
+
+.content {
+  text-align: center;
+  width: 80%;
+  height: 800px; /* set the height to 2000px */
+  padding: 20px;
+  border: 2px solid black;
+  box-sizing: border-box; 
+  max-width: 900px; 
+  max-height: 500px;
+  background-color: #e2eaf1;
+  position: relative;
+  top: 5px;
+  overflow: hidden;
+}
+
+.content p {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.centered-image {
+  position: relative;
+  display: block;
+  left: 10px;
+  top: -25px;
+  width: 30%;
+  height: auto;
+  padding: 20px;
+}
+
+.second-image {
+  position: relative;
+  display: block;
+  left: 450px;
+  top: -390px;
+  width: 29%;
+  height: auto;
+  padding: 20px;
+}
+
+.third-image {
+  position: relative;
+  display: block;
+  left: 50px;
+  top: -25px;
+  width: 29%;
+  height: auto;
+  padding: 20px;
+}
+
+.fourth-image {
+  position: relative;
+  display: block;
+  left: 500px;
+  top: -425px;
+  width: 28%;
+  height: auto;
+  padding: 20px;
+}
+
+.fifth-image {
+  position: relative;
+  display: block;
+  left: 10px;
+  top: -375px;
+  width: 35%;
+  height: auto;
+  padding: 20px;
+}
+
+.sixth-image {
+  position: relative;
+  display: block;
+  left: 355px;
+  top: -20px;
+  width: 55%;
+  height: auto;
+  padding: 20px;
+}
+
+.seventh-image {
+  position: relative;
+  display: block;
+  left: 75px;
+  top: -20px;
+  width: 30%;
+  height: auto;
+  padding: 20px;
+}
+
+.eight-image {
+  position: relative;
+  display: block;
+  left: 500px;
+  top: -400px;
+  width: 30%;
+  height: auto;
+  padding: 20px;
+}
