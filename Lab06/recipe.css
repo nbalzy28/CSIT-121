@@ -1,0 +1,332 @@
+/* The .column class sets the width, padding, and height properties for elements with this class*/
+.column {
+width: 50%;
+padding: 10px;
+height: 300px;
+}
+
+/* The :after pseudo-class clears floats for elements with the .row class*/
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* The .footer class sets the background color, padding, and text alignment for elements with this class*/
+.footer {
+background-color: #e2eaf1;
+padding: 10px;
+text-align: center;
+}
+
+/* The body selector sets the background color and font family for the entire page*/
+body {
+background-color: #e2eaf1;
+font-family: Arial, sans-serif;
+}
+
+/* The h1 and h2 selectors set the text alignment for elements with these tags*/
+h1, h2 {
+text-align: center;
+}
+
+/* The h1 selector sets the font size and color for elements with this tag*/
+h1 {
+font-size: 32px;
+color: #1e5c9d;
+}
+
+/* The h2 selector sets the font size and color for elements with this tag*/
+h2 {
+font-size: 24px;
+color: #1e5c9d;
+}
+
+/* The h3 selector sets the font size and color for elements with this tag*/
+h3 {
+font-size: 18px;
+color: #1e5c9d;
+}
+
+/* The h4 selector sets the font size and color for elements with this tag*/
+h4 {
+font-size: 18px;
+color: #1e5c9d;
+}
+
+/* The p selector sets the font size, color, and line-height for elements with this tag*/
+p {
+font-size: 16px;
+color: black;
+line-height: 1.5;
+}
+
+/* The :link and :visited pseudo-classes set the color and text decoration for unvisited and visited links*/
+a:link,
+a:visited {
+color: #1e5c9d;
+text-decoration: none;
+}
+
+/* The :hover pseudo-class sets the color and text decoration for links when they are hovered over*/
+a:hover {
+color: red;
+text-decoration: underline;
+}
+
+/* The .image class sets the width, box-shadow, and border-radius for elements with this class*/
+.image {
+width: 300px;
+box-shadow: 0.75em 0.75em 1em #444444;
+border-radius: 16px;
+}
+
+/* The :first-of-type pseudo-class sets the width for the first element of its type with the .image class*/
+.image:first-of-type {
+width: 300px;
+}
+
+/* The .container class sets the display, justify-content, align-items, margin, and width properties for elements with this class*/
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+width: 80%;
+flex-wrap: wrap; /* add flex-wrap property to allow flex items to wrap */
+}
+
+/* The .button class sets the background color, color, padding, border-radius, border, and cursor properties for elements with this class*/
+.button {
+background-color: #1e5c9d;
+color: #fff;
+padding: 10px 20px;
+border-radius: 5px;
+border: none;
+cursor: pointer;
+}
+
+/* This CSS block applies a dark background color to a button when the user hovers over it*/
+.button:hover {
+  background-color: #3b3f42;
+}
+
+/* This CSS block styles a container element with a flex display that wraps its child elements when they exceed the container's width. Child elements are centered horizontally within the container*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* This CSS block styles images to be block-level elements that are centered horizontally within their parent container. Images are sized to take up 25% of the container's available space and should never exceed the width of the container*/
+.image {
+  display: block;
+  margin: 0 auto;
+  flex-basis: 25%;
+  max-width: 100%;
+}
+
+/* This CSS block centers the content within a second-header container by using flex display and centering the child elements horizontally*/
+.second-header {
+  display: flex;
+  justify-content: center;
+}
+
+/* This CSS block sets the margins of the last child element with the class "image" to auto, which will center it vertically within its parent container*/
+.image:last-child {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.one {
+  width: 300px;
+  box-shadow: 0.75em 0.75em 1em #444444;
+  border-radius: 16px;
+}
+
+/* The :first-of-type pseudo-class sets the width for the first element of its type with the .image class*/
+.one:first-of-type {
+  width: 300px;
+}
+
+/* This CSS block styles images to be block-level elements that are centered horizontally within their parent container. Images are sized to take up 25% of the container's available space and should never exceed the width of the container*/
+.one {
+  display: block;
+  margin: 0 auto;
+  flex-basis: 25%;
+  max-width: 100%;
+
+}
+
+@media only screen and (max-width: 768px) {
+  /* CSS code for smartphone screens */
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.column {
+  width: 100%;
+  max-width: 800px;
+  padding: 10px;
+  height: auto;
+  margin: 10px 0;
+}
+
+body {
+background-color: #e2eaf1;
+font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+text-align: center;
+}
+
+h1 {
+font-size: 32px;
+color: #1e5c9d;
+}
+
+h2 {
+font-size: 24px;
+color: #1e5c9d;
+}
+
+h3 {
+font-size: 18px;
+color: #1e5c9d;
+}
+
+h4 {
+font-size: 18px;
+color: #1e5c9d;
+}
+
+p {
+font-size: 16px;
+color: black;
+line-height: 1.5;
+}
+
+a:link,
+a:visited {
+color: red;
+text-decoration: none;
+}
+
+a:hover {
+color: darkblue;
+text-decoration: underline;
+}
+
+.one {
+  width: 300px;
+  box-shadow: 0.75em 0.75em 1em #1e5c9d;
+  border-radius: 16px;
+}
+
+.one:first-of-type {
+  width: 300px;
+}
+
+.one {
+  display: block;
+  margin: 0 auto;
+  flex-basis: 25%;
+  max-width: 100%;
+
+}
+
+.image {
+  width: 300px;
+  box-shadow: 0.75em 0.75em 1em #1e5c9d;
+  border-radius: 16px;
+}
+
+.image:first-of-type {
+  width: 300px;
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+  flex-basis: 25%;
+  max-width: 100%;
+}
+
+.image {
+  position: relative;
+  top: 10px;
+  right: -100px;
+}
+
+.one {
+  position: relative;
+  top: 26px;
+  left: -115px;
+}
+
+.column {
+width: 50%;
+padding: 10px;
+height: 300px;
+}
+
+/* The :after pseudo-class clears floats for elements with the .row class*/
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* The .footer class sets the background color, padding, and text alignment for elements with this class*/
+.footer {
+  position: absolute;
+  top: 1500px;
+  left: 0;
+  width: 100%;
+  background-color: #e2eaf1;
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+width: 80%;
+flex-wrap: wrap; /* add flex-wrap property to allow flex items to wrap */
+}
+
+.button {
+background-color: #1e5c9d;
+color: #fff;
+padding: 10px 20px;
+border-radius: 5px;
+border: none;
+cursor: pointer;
+}
+
+.button:hover {
+  background-color: darkblue;
+}
+
+.image:hover {
+  opacity: 0.8;
+  border: 1px solid black;
+  transform: scale(1.0);
+}
+
+.one:hover {
+  opacity: 0.8;
+  border: 1px solid black;
+  transform: scale(1.0);
+}
+}
