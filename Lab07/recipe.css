@@ -1,0 +1,201 @@
+ * {
+  box-sizing: border-box;
+  }
+
+/* The .column1 class sets the width, padding, and height properties for elements with this class */
+.column1 {
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+  float: left;
+}
+
+/* The .column2 class sets the width, padding, and height properties for elements with this class */
+.column2 {
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+  position: relative;
+  left: 385px;
+  top: -272px;
+}
+
+/* The .footer class sets the background color, padding, and text alignment for elements with this class */
+.footer {
+  background-color: #e2eaf1;
+  padding: 10px;
+  text-align: left;
+  position: relative;
+  top: -375px;
+}
+
+.image {
+  width: 300px;
+  box-shadow: 0.75em 0.75em 1em #444444;
+  border-radius: 16px;
+  position: relative;
+  left: 650px;
+}
+
+.one {
+  width: 300px;
+  box-shadow: 0.75em 0.75em 1em #444444;
+  border-radius: 16px;
+  position: relative;
+  left: -200px; 
+}
+
+/* The .container class sets the margin, and width properties for elements with this class */
+.container {
+  margin: 0 auto;
+  width: 80%;
+  overflow: hidden;
+ }
+
+.table {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border: 2px solid #1e5c9d;
+  padding: 10px;
+  width: 350px;
+  position: relative;
+  right: -1150px;
+  top: -450px;
+}
+
+.table td {
+  border-bottom: 1px solid black;
+}
+
+.table h2{
+  border-bottom: 1px solid black;
+}
+
+/* The body selector sets the background color and font family for the entire page */
+body {
+  background-color: #e2eaf1;
+  font-family: Arial, sans-serif;
+}
+
+/* The h1 and h2 selectors set the text alignment for elements with these tags */
+h1, h2 {
+  text-align: center;
+}
+
+/* The h1 selector sets the font size and color for elements with this tag */
+h1 {
+  font-size: 32px;
+  color: #1e5c9d;
+}
+
+/* The h2 selector sets the font size and color for elements with this tag */
+h2 {
+  font-size: 24px;
+  color: #1e5c9d;
+}
+
+/* The h3 and h4 selectors set the font size and color for elements with these tags */
+h3, h4 {
+  font-size: 18px;
+  color: #1e5c9d;
+}
+
+/* The p selector sets the font size, color, and line-height for elements with this tag */
+p {
+  font-size: 16px;
+  color: black;
+  line-height: 1.5;
+}
+
+/* The :link and :visited pseudo-classes set the color for unvisited and visited links */
+a:link,
+a:visited {
+  color: #1e5c9d;
+}
+
+/* The :hover pseudo-class sets the color for links when they are hovered over */
+a:hover {
+  color: red;
+}
+
+@media only screen and (max-width: 768px) {
+.column2 {
+  position: relative;
+  left: -120px;
+  top: -45px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.column1 {
+  width: 100%;
+  max-width: 800px;
+  padding: 10px;
+  height: auto;
+  margin: 10px 0;
+}
+
+a:link,
+a:visited {
+  color: red;
+}
+
+a:hover {
+  color: darkblue;
+}
+
+.one {
+  width: 300px;
+  box-shadow: 0.75em 0.75em 1em #1e5c9d;
+  border-radius: 16px;
+}
+
+.image {
+  width: 300px;
+  box-shadow: 0.75em 0.75em 1em #1e5c9d;
+  border-radius: 16px;
+}
+
+.image {
+  position: relative;
+  top: 10px;
+  left: 115px;
+}
+
+.one {
+  position: relative;
+  top: 26px;
+  left: -30px;
+}
+
+.footer {
+  position: relative;
+  top: 400px;
+}
+
+.container {
+flex-wrap: wrap;
+}
+
+.image:hover {
+  opacity: 0.8;
+  border: 1px solid black;
+  transform: scale(1.0);
+}
+
+.one:hover {
+  opacity: 0.8;
+  border: 1px solid black;
+  transform: scale(1.0);
+  }
+
+.table {
+  position: relative;
+  right: -25px;
+  top: 375px;
+}
+}
