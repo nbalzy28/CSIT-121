@@ -1,86 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>My Final Project</title>
-    <link href="homepage.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
-      <div class="box">
-        <h1>Nick's Final Project</h1>
-        <img src="Images/Senior_Portrait.jpg" alt="My Senior Photo" class="senior-image">
-        <img src="Images/Suit.png" alt="Senior Prom" class="prom-image">
-      </div>
-      <main class="content">
-        <h2>Welcome to my comic book themed web page!</h2>
-        <p>
-          Hello, my name is Nicholas Balzano and I am a first year college student at CCBC currently majoring in IT Networking. As such I had the honor of taking the course CSIT 121 Web Standards. In this class, I learned all about the principles, technologies, and standards used in creating hand coded web pages, and this website acts as my final project to showcase all that I have learned. I decided to make my final website a personal site, dedicating it to some of my personal favorite comic book characters.
-        </p>
-        <div class="form">
-          <h3>Join my comics subscribers list and leave a comment below!:</h3>
-          <form action="forminfo">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email" style="margin-bottom: 10px;"><br>
-            <label for="select">Choose your favorite comics publisher below:</label><br>
-            <select id="select" name="select">
-              <option value="choice1">Marvel</option>
-              <option value="choice2">DC</option>
-              <option value="choice3">Image</option>
-              <option value="choice4">Dark Horse</option>
-              <option value="choice5">IDW</option>
-              <option value="choice6">BOOM!</option>
-              <option value="choice7">Dynamite Entertainment</option>
-              <option value="choice8">VIZ Media</option>
-              <option value="choice9">Oni Press</option>
-              <option value="choice10">Fantagraphics Books</option>
-            </select><br><br>
-            <label for="comment">Leave a comment below!:</label><br>
-            <textarea id="comment" name="comment" rows="4" cols="50" maxlength="100"></textarea><br><br>
-            <label>Do you want to subscribe to our mailing list?</label><br>
-            <input type="radio" id="yes" name="mailing_list" value="yes">
-            <label for="yes">Yes</label><br>
-            <input type="radio" id="no" name="mailing_list" value="no">
-            <label for="no">No</label><br>
-            <input type="submit" value="Submit" style="margin-top: 10px;">
-            <input type="reset" value="Reset" style="margin-right: 10px;">
-            <p id="char-count"></p>
-          </form>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Homepage</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="section1">
+            <h2>Section 1</h2>
+            <p>This is the first section of my homepage.</p>
+        </section>
+        <section id="section2">
+            <h2>Section 2</h2>
+            <p>This is the second section of my homepage.</p>
+        </section>
+        <section id="section3">
+            <h2>Section 3</h2>
+            <p>This is the third section of my homepage.</p>
+        </section>
     </main>
-    <div class="sidebar">
-      <h2>Page Navigation:</h2>
-      <ul>
-        <li>
-          <a href="index.html" class="subpage">Home</a>
-        </li>
-        <li>
-         <a href="heroes.html" class="subpage">Heroes</a>
-        </li>
-        <li>
-         <a href="spiderman.html" class="subpage">Spiderman</a>
-        </li>
-        <li>
-          <a href="daredevil.html" class="subpage">DareDevil</a>
-        </li>
-        <li>
-          <a href="villains.html" class="subpage">Villains</a>
-        </li>
-        <li>
-          <a href="magneto.html" class="subpage">Magneto</a>
-        </li>
-        <li>
-          <a href="greengoblin.html" class="subpage">Green Goblin</a>
-        </li>
-        <li>&nbsp;</li>
-        <li>Cont@ct me below:</li>
-        <li>Email: ba1129392@email.ccbcmd.edu</li>
-        <li>Phone: 443-743-0779</li>
-      </ul>
-    </div>
-  </div>
+    <footer>
+        <p>&copy; 2024 My Homepage</p>
+    </footer>
 </body>
 </html>
+        
